@@ -11,8 +11,71 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 body {
-  padding: 0;
+  padding: 30px;
+  background: repeating-linear-gradient(to bottom, red, red 20px, white 20px, white 40px);
 }
+
+/* Tabs */
+ul.nav li{
+  border-bottom: none !important;
+  background-color: #fff;
+}
+ul.nav li:first-child{
+    border: 10px solid #0070c0;
+}
+ul.nav li:nth-child(2){
+    border: 10px solid black;
+}
+ul.nav li:last-child{
+  border: 10px solid red;
+}
+.tab-pane{
+  padding: 20px;
+  min-height: 400px;
+  background-color: #fff;
+  height: 400px;
+  overflow-y: scroll;
+}
+.tab-pane#hillary{
+  border: 10px solid #0070c0;
+}
+.tab-pane#home{
+  border: 10px solid black;
+  text-align: center;
+  position: relative;
+  padding: 0;
+
+  h1{
+    font-size: 60px;
+    position: relative;
+    top: 30%;
+  }
+}
+.tab-pane#donald{
+  border: 10px solid red;
+}
+
+/* Tweets */
+.tweet{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 7px;
+
+  img{
+    border-radius: 5px;
+    margin:0 auto;
+  }
+  .name{
+    display: block;
+    color: #292f33;;
+
+    .username{
+      font-weight: 400;
+      color: #8899a6;
+    }
+
+  }
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -40,7 +103,11 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  text-align: center;
+
+  img{
+    margin: 0 auto;
+  }
 }
 
 .container-narrow > hr {
