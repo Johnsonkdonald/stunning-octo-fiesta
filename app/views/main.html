@@ -1,0 +1,19 @@
+<ul class="nav nav-tabs nav-justified" role="tablist">
+	<li role="presentation"><a data-toggle="tab" aria-controls="hillary" href="#hillary">Hillary</a></li>
+	<li role="presentation"><a data-toggle="tab" aria-controls="home" href="#home">Home</a></li>
+	<li role="presentation"><a data-toggle="tab" aria-controls="donald" href="#donald">Donald</a></li>
+</ul>
+
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane" id="hillary" ng-controller="HillaryCtrl">
+		<div id="hashtagHillary"></div>
+		<div id="searchHillary"></div>
+	</div>
+	<div role="tabpanel" class="tab-pane active" id="home">
+		<h1>Hillary vs. Donald</h1>
+	</div>
+	<div role="tabpanel" class="tab-pane" id="donald" ng-controller="DonaldCtrl">
+		<div id="hashtagDonald"></div>
+		<div id="searchDonald"></div>
+	</div>
+</div>
