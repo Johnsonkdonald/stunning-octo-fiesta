@@ -2,19 +2,20 @@
 
 /**
  * @ngdoc function
- * @name desktopApp.controller:HillaryCtrl
+ * @name desktopApp.controller:DonaldCtrl
  * @description
- * # HillaryCtrl
+ * # DonaldCtrl
  * Controller of the desktopApp
  */
 
 angular.module("desktopApp")
-	.controller("HillaryCtrl",["$scope","$http",function ($scope,$http){
+	.controller("DonaldCtrl",["$scope","$http",function ($scope,$http){
 		try{
-			// #HillaryClinton
-			var configProfile2 = {
-			  "id" : "763246402600247296",
-			  "domId": 'hashtagHillary',
+
+			// #DonaldTrump
+			var configProfile = {
+			  "id" : "763245631607406593",
+			  "domId": 'hashtagDonald',
 			  "maxTweets": 20,
 			  "enableLinks": true, 
 			  "showUser": true,
@@ -22,20 +23,20 @@ angular.module("desktopApp")
 			  "showImages": false,
 			  "lang": 'en'
 			};
-			twitterFetcher.fetch(configProfile2);
+			twitterFetcher.fetch(configProfile);
 
-			// Hillary Clinton
-			var configProfile3 = {
-				"id"	: "763249559233437696",
-				"domId": 'searchHillary',
+			// Donald Trump
+			var configProfile1 = {
+			  	"id"	: "763248036822720515",
+				"domId": 'searchDonald',
 				"maxTweets": 20,
 				"enableLinks": true, 
 				"showUser": true,
 				"showTime": true,
 				"showImages": false,
 				"lang": 'en'
-			}
-			twitterFetcher.fetch(configProfile3);
+			};
+			twitterFetcher.fetch(configProfile1);
 
 		}catch (Err){
 			console.log(Err);

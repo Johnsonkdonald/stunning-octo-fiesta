@@ -6,28 +6,14 @@
 
 <div class="tab-content">
 	<div role="tabpanel" class="tab-pane" id="hillary" ng-controller="HillaryCtrl">
-		<div class="row tweet">
-			<div class="col-sm-2 col-md-2 col-lg-2">
-				<img src="images/hillary.jpg" class="img-responsive"/>
-			</div>
-			<div class="col-sm-8 col-md-8 col-lg-10">
-				<strong class="name">Hillary Clinton <span class="username">@hillary</span></strong>
-				My tweet is here.
-			</div>
-		</div>
+		<div id="hashtagHillary"></div>
+		<div id="searchHillary"></div>
 	</div>
 	<div role="tabpanel" class="tab-pane active" id="home">
 		<h1>Hillary vs. Donald</h1>
 	</div>
-	<div role="tabpanel" class="tab-pane" id="donald">
-		<div class="row tweet">
-			<div class="col-sm-2 col-md-2 col-lg-2">
-				<img src="images/donald.jpg" class="img-responsive"/>
-			</div>
-			<div class="col-sm-8 col-md-8 col-lg-10">
-				<strong class="name">Donald Trump <span class="username">@donald</span></strong>
-				My tweet is here.
-			</div>
-		</div>
+	<div role="tabpanel" class="tab-pane" id="donald" ng-controller="DonaldCtrl">
+		<div id="hashtagDonald"></div>
+		<div id="searchDonald"></div>
 	</div>
 </div>
