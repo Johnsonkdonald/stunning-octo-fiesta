@@ -1,5 +1,5 @@
 // Generated on 2016-07-27 using generator-angular 0.15.1
-'use stric';
+'use strict';
 
 // # Globbing
 // for performance reasons we're only matching one level down:
